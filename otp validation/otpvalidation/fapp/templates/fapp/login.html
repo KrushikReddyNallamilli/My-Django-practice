@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+</head>
+<body>
+	<form action="{% url 'validate_user' %}" method="post">
+		{% csrf_token %}
+
+		<table align="center" border="2">
+			<tr>
+				<th>Login Page</th>
+			</tr>
+			<tr>
+				<th><input type="text" name="uname" placeholder="username" required></th>
+			</tr>
+			<tr>
+				<th><input type="password" name="upassword" placeholder="password" required></th>
+			</tr>
+			<tr>
+				<th><input type="submit" name="submit"></th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

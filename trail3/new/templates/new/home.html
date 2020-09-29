@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reg</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<body>
+<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 col-md-offset-3 bg-primary">
+				<h2 class="text-center">Register Now</h2>
+				<hr>
+				<form method="post">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" placeholder="Enter Name" name="name">
+				</div>
+				<div class="form-group">
+					<label for="roll">Roll Number:</label>
+					<input type="text" class="form-control" placeholder="Enter Roll Number" name="roll">
+				</div>
+				<div class="form-group">
+					<label>College:</label>
+					<select class="form-control" name="college">
+						<option value="">Select College</option>
+						<option value="AEC">AEC</option>
+						<option value="ACET">ACET</option>
+						<option value="ACOE">ACOE</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Branch:</label>
+					<select class="form-control" name="branch">
+						<option value="">Select Branch</option>
+						<option value="ECE">ECE</option>
+						<option value="CSE">CSE</option>
+						<option value="IT">IT</option>
+						<option value="EEE">EEE</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" class="form-control" placeholder="Enter email" name="email">
+				</div>
+				<div class="form-group">
+					<label for="phone">Phone Number:</label>
+					<input type="number" class="form-control" placeholder="Enter phone" name="phone">
+				</div>
+				<div class="form-group">
+					<label>Date of Birth:</label>
+					<input type="date" class="form-control" name="dt">
+				</div>
+				<div class="form-group">
+					<label>Place:</label>
+					<select class="form-control" name="place">
+						<option value="">Select place</option>
+						<option value="Kakinada urban">Kakinada urban</option>
+						<option value="Kakinada Rural">Kakinada Rural</option>
+						<option value="Rjy Urban">Rjy Urban</option>
+						<option value="Rjy Rural">Rjy Rural</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Gender:</label> <br>
+					<div class="col-md-2">
+						<label>Male</label><input type="radio" name="gender" value="male">
+					</div>
+					<div class="col-md-2">
+						<label>Female</label><input type="radio" name="gender" value="female">
+					</div>
+				</div>
+				<br>
+				<button type="submit" class="btn btn-success btn-block" name="submit">Submit</button>
+				<br><br><br>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

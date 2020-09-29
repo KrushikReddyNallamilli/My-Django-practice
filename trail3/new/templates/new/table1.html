@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Page</title>
+</head>
+<body>
+	<marquee>Example for Table</marquee>
+	<marquee direction='down' height="150"bgcolor='bluer'>top down</marquee>
+	<table border="2">
+		<tr rowspan='2'>
+			<th>first Name</th>
+			<th>Last name</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>jil</td>
+			<td>smit</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>kk</td>
+			<td>ji</td>
+			<td>20</td>
+		</tr>
+	</table>
+	<img src="{% static 'images/kru.jpg' %}" alt="kru-img">
+	
+
+</body>
+</html>

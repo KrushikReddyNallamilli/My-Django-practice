@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>
+		<h1>Data From Database</h1>
+		<!-- {{info}} -->
+		<!-- 
+		{% for i in info %}
+			<h1>{{i.name}}</h1>
+			<h1>{{i.age}}</h1>
+			<h1>{{i.desig}}</h1>
+			<h1>{{i.salary}}</h1>
+			<h1>{{i.phno}}</h1>
+		{% endfor %} -->
+		
+		<table border="2px">
+			<tr>
+				<thead>
+					<th>S.No</th>
+					<th>name</th>
+					<th>Age</th>
+					<th>Salary</th>
+					<th>Designation</th>
+					<th>Phno</th>
+					<th>Delete</th>
+				</thead>
+			</tr>
+			{% for i in info %}
+			<tr>
+				<td>{{forloop.counter}}</td>
+				<!-- <td>{{i.id}}</td> -->
+				<td>{{i.name}}</td>
+				<td>{{i.age}}</td>
+				<td>{{i.salary}}</td>
+				<td>{{i.desig}}</td>
+				<td>{{i.phno}}</td>
+				<td><a href="{% url 'delete' i.name %}"> Delete </a></td>
+			</tr>
+			{% endfor %}
+		</table>
+	</center>
+</body>
+</html>
